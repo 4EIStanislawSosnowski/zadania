@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stanisław Sosnowski 3EI" />
+    <title>Szlak — wypożyczalnia</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Wypożyczalnia Szlak</h1>
+        <nav>
+            <a href="#cennik">Cennik</a>
+            <a href="#rezerwacja">Rezerwacja</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sprzęt</h2>
+            <dl>
+                <dt>Namiot 2-os.</dt>
+                <dd>40 zł za dobę</dd>
+                <dt>Rower trekkingowy</dt>
+                <dd>55 zł za dobę</dd>
+                <dt>Kajak</dt>
+                <dd>70 zł za dobę</dd>
+            </dl>
+        </section>
+
+        <section id="cennik">
+            <h2>Cennik</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sprzęt</th>
+                        <th>Doba</th>
+                        <th>Weekend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Namiot 2-os.</td>
+                        <td class="cena">40 zł</td>
+                        <td class="cena">70 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rower trekkingowy</td>
+                        <td class="cena">55 zł</td>
+                        <td class="cena">95 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Kajak</td>
+                        <td class="cena">70 zł</td>
+                        <td class="cena">120 zł</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="rezerwacja">
+            <h2>Rezerwacja</h2>
+            <form action="#" method="POST">
+                <p>
+                    <label for="imie">Imię</label>
+                    <input type="text" id="imie" name="imie">
+                </p>
+                <p>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="sprzet">Sprzęt</label>
+                    <select id="sprzet" name="sprzet">
+                        <option value="namiot">Namiot 2-os.</option>
+                        <option value="rower">Rower trekkingowy</option>
+                        <option value="kajak">Kajak</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Zarezerwuj</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Stanisław Sosnowski 3EI</p>
+    </footer>
+
+</body>
+</html>
